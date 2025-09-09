@@ -52,7 +52,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23334155" stroke-width="0.5" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>') repeat;
+            background: url('image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23334155" stroke-width="0.5" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>') repeat;
             animation: gridMove 20s linear infinite;
         }
 
@@ -138,6 +138,7 @@
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
+            padding-top: 80px; /* ✅ FIX: agar judul tidak tertutup navbar */
         }
 
         .hero h1 {
@@ -464,7 +465,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#" class="download-btn">Download CV</a>
+            <a href="https://drive.google.com/uc?export=download&id=11NLMQsmh5Oce6BtZghc0wAr1OrOAi0cJ" class="download-btn" target="_blank">Download CV</a>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -473,12 +474,28 @@
 
     <section id="home" class="hero">
         <div class="hero-container">
-            <h1>AI Engineer & Computer Vision Specialist</h1>
-            <h2>Building intelligent systems with PyTorch, YOLO, and real-world deployment</h2>
+            <h1>AI/ML Engineer & Computer Vision Specialist</h1>
+            <h2>Building intelligent systems in the real-world deployment</h2>
             <div class="hero-buttons">
-                <a href="#experience" class="btn-primary">View Projects</a>
-                <a href="#contact" class="btn-secondary">Contact Me</a>
+                <a href="https://www.canva.com/design/DAGk-OJRfSA/LF1EIQdc-TE-svKmhclN6w/view?utm_content=DAGk-OJRfSA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h95257e7eb2" class="btn-primary">View Projects</a>
+                <a href="https://wa.me/6285777145179" class="btn-secondary">Chat via WhatsApp</a>
             </div>
+
+            <!-- Profile Preview -->
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 2rem; margin-top: 4rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <img src="Rahmad Hidayad_Foto.jpg" alt="Rahmad Hidayad" style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 4px solid transparent; box-shadow: 0 8px 25px rgba(0,0,0,0.3); background: var(--gradient-2); padding: 3px;">
+                <div style="background: var(--gradient-2); background-clip: padding-box; border-radius: 15px; padding: 2rem; text-align: center; width: 100%; backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.3);">
+                    <p style="color: white; font-size: 1.05rem; line-height: 1.7; margin: 0;">
+                        I am a Computer Engineering graduate from Telkom University, equipped with strong analytical skills, 
+                        effective communication abilities, and a proactive attitude toward learning and quickly adapting to 
+                        dynamic work environments. Although I am at the early stage of my professional career, I possess 
+                        solid organizational and time management skills — both independently and in collaborative team settings. 
+                        I am genuinely enthusiastic about embarking on my career journey in roles that offer opportunities for 
+                        continuous growth and allow me to make meaningful, positive contributions to the organization.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -519,7 +536,7 @@
                 <h3>Internship – Artificial Intelligence Track</h3>
                 <div class="experience-meta">Startup Campus (Remote) | Aug 2022 – Dec 2022</div>
                 <ul>
-                    <li>Trained and evaluated deep learning models on the Fashion-MNIST dataset for image classification tasks.</li>
+                    <li>Evaluated deep learning models on the Fashion-MNIST dataset for image classification tasks.</li>
                     <li>Implemented workflows for data preprocessing, model training, and testing using Python and PyTorch.</li>
                     <li>Learned and applied concepts in computer vision and neural networks for practical problem solving.</li>
                     <li>Collaborated using Git/GitHub for version control and project documentation.</li>
@@ -609,9 +626,9 @@
     <footer id="contact">
         <div class="footer-content">
             <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fas fa-globe"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="github.com/rahmadyd"><i class="fab fa-github"></i></a>
+                <a href="https://medium.com/@rahmadyad" target="_blank">Medium</a>
+                <a href="linkedin.com/in/rahmadyd/"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:rhmad.yayat102@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="tel:+6285777145179"><i class="fas fa-phone"></i></a>
             </div>
